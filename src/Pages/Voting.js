@@ -23,7 +23,7 @@ const Voting = () => {
       key:"pk_test_738c5038178fb13b68b9bb15cf43517877d65c17",
       amount: vote * 50 * 100,
       email,
-      ref: `${ref}` + (Math.floor(Math.random) *10000 + 1) ,
+      ref: `${ref}` + (Math.floor(Math.random  * 10000) + 1) ,
          onSuccess(transaction){
         let message= `Payment Successful! ${transaction.reference}`
         alert(message)
